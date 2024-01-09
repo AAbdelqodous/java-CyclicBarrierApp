@@ -11,6 +11,7 @@ public class Test {
         ZooManager manager = new ZooManager();
 
         CyclicBarrier barrier1 = new CyclicBarrier(4);
+
         CyclicBarrier barrier2 = new CyclicBarrier(4, () -> System.out.println("Cleaning cage done.."));
 
         try {
